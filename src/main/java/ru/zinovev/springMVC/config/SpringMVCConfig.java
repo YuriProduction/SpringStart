@@ -14,7 +14,7 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("ru.zinovev.springMVC.logic")
+@ComponentScan("ru.zinovev.springMVC")
 @EnableWebMvc
 public class SpringMVCConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
