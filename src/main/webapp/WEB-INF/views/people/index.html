@@ -16,8 +16,13 @@
 <body>
 
 <div th:each="person : ${people}">
-    <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName() + person.getSurname()}">user</a>
+    <a th:href="@{/people/{id}(id=${person.getId()})}"
+       th:text="${person.getName() +' ' + person.getEmail()
+        + ' ' + person.getAge()}">
+        user</a>
 </div>
+<br/>
+<hr>
 <div>
     <a href="http://localhost:8080/people/new">Add new Person to database!</a>
 </div>
