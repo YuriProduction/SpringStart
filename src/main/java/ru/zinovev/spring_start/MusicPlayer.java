@@ -30,6 +30,14 @@ public class MusicPlayer {
     private Music music1;
     private Music music2;
 
+    @Autowired
+    public void injectionMethod(@Qualifier("rockMusicBean") Music music3) {
+        System.out.println("Successful injection!");
+        this.music3 = music3;
+    }
+
+    private Music music3;
+
     public String getName() {
         return name;
     }
@@ -37,6 +45,7 @@ public class MusicPlayer {
     public int getVolume() {
         return volume;
     }
+
 
     @Autowired
     public MusicPlayer(@Qualifier("rockMusicBean") Music music1, @Qualifier("rapMusicBean") Music music2) {
