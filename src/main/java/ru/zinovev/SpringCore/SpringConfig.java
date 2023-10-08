@@ -1,4 +1,4 @@
-package ru.zinovev.spring_start;
+package ru.zinovev.SpringCore;
 
 
 import org.springframework.context.annotation.*;
@@ -8,7 +8,7 @@ import java.util.List;
 
 @Configuration
 @PropertySource("classpath:musicPlayer.properties")
-@ComponentScan("ru.zinovev.spring_start")
+@ComponentScan("ru.zinovev.SpringCore")
 public class SpringConfig {
     @Bean
     public MusicPlayer musicPlayerBean() {

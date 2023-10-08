@@ -1,4 +1,4 @@
-package ru.zinovev.spring_start;
+package ru.zinovev.SpringCore;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

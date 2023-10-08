@@ -1,4 +1,4 @@
-package ru.zinovev.spring_start;
+package ru.zinovev.SpringCore;
 
 public interface Music {
     String getSound();
